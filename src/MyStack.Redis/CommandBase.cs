@@ -57,6 +57,10 @@ namespace Microsoft.Extensions.Redis
             }
             return (TResult)value;
         }
+        /// <summary>
+        /// Gets the version number of an Command
+        /// </summary>
+        public virtual Version Version => new Version(1, 0, 0);
     }
 
 }
